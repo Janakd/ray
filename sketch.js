@@ -4,21 +4,22 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(198,127,255)
   noStroke()
-    var binary = [0,1];
+
+}
+
+function draw(){
+    var binary = [0,1,2,3,4,5,6,8,8,8,8,8,8,8,8,8,8,8,8,8];
 
     
     for (var x = 0; x <=width; x+=105){
       for (var y = 0; y<=height; y+=105){
+        
         var index = floor(random(binary.length));
         chooseOne(binary,index,x,y)
     
       }
       
     }
-}
-
-function draw(){
-  
 
 }
   
@@ -30,7 +31,7 @@ function chooseOne(binary, index,x,y){
         if (binary[index] == 0){
           drawSquare2(x,y)
         }
-        else if (binary[index] == 1){
+        else if (binary[index] ==1){
           drawSquare1(x,y)
         }
 }
