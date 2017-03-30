@@ -39,7 +39,7 @@ function drawSquare1(x,y) {
 
   rectMode(CENTER)
   //big square
-  fill(214,121,mouseX*0.2)
+  fill(214,121,noiseVal*100)
     rect(x,y,100,100);
 
   //med square
@@ -47,7 +47,7 @@ function drawSquare1(x,y) {
   rect(x+10,y+10,80,80);
   
   //small square
-  fill(224,121,noiseVal*200)
+  fill(224,121,noiseVal*100)
   rect(x+40,y+40,20,20) 
   }
 
@@ -56,7 +56,7 @@ function drawSquare2(x,y) {
   var noiseVal = noise((mouseX+x)*noiseScale, (mouseY+y)*noiseScale)
   
   //big square
-  fill(204,57,noiseVal*100)
+  fill(204,57,noiseVal*200)
   rect(x,y,100,100);
   
   //small square
